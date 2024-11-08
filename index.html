@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bakery business card website with menu description and several recipes">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="header-menu-wrap">
+                <h1>gustoso</h1>  <!-- название -->
+                <ul class="header-menu"> <!-- шаблон для меню -->
+                    <li>Welcome</li> <li>~</li>
+                    <li>Menu</li> <li>~</li>
+                    <li>reservations</li> <li>~</li>
+                    <li>News</li>
+                </ul>
+    
+                <div class="contact-logos"> <!-- значки с права -->
+                    <svg 
+                        
+                        width="16px" height="13px">
+                        <path fill-rule="evenodd"  fill="rgb(239, 235, 228)"
+                        d="M15.1000,1.495 L14.500,2.992 C14.500,2.992 14.500,2.856 14.500,3.241 C14.500,3.515 14.456,3.776 14.392,4.029 C14.357,6.088 13.699,8.818 10.1000,10.973 C5.689,15.210 -0.000,11.471 -0.000,11.471 C4.500,11.471 4.500,9.974 4.500,9.974 C3.500,9.974 1.500,7.980 1.500,7.980 C1.1000,8.478 2.1000,7.980 2.1000,7.980 C0.500,6.483 0.500,4.987 0.500,4.987 C0.1000,5.485 1.1000,4.987 1.1000,4.987 C-0.500,2.992 0.1000,0.498 0.1000,0.498 C1.500,2.992 7.1000,3.989 7.1000,3.989 L8.083,3.948 C8.032,3.720 7.1000,3.235 7.1000,2.992 C7.1000,1.201 9.455,-0.001 11.250,-0.001 C12.238,-0.001 13.112,0.448 13.708,1.142 L13.1000,0.996 L15.500,-0.001 L14.500,1.994 L15.1000,1.495 Z"/>
+                    </svg>
+                    <svg 
+                        
+                        width="8px" height="15px">
+                        <path fill-rule="evenodd"  fill="rgb(239, 235, 228)"
+                        d="M2.1000,14.1000 L2.1000,7.1000 L-0.000,7.999 L-0.000,5.1000 L2.1000,5.1000 L2.1000,2.999 C2.1000,0.661 4.182,0.004 6.229,0.004 C7.209,0.004 7.725,0.111 7.971,0.145 L7.971,2.511 L6.235,2.511 C5.122,2.511 4.1000,4.209 4.1000,4.1000 L4.1000,5.1000 L7.1000,5.1000 L7.500,7.999 L4.1000,7.999 L4.1000,14.999 L2.1000,14.1000 Z"/>
+                    </svg> 
+                    <svg 
+                   
+                    width="14px" height="16px">
+                    <path fill-rule="evenodd"  fill="rgb(239, 235, 228)"
+                    d="M11.500,15.999 L2.500,15.999 C1.119,15.999 -0.000,14.880 -0.000,13.499 L-0.000,2.499 C-0.000,1.118 1.119,-0.001 2.500,-0.001 L11.500,-0.001 C12.881,-0.001 13.1000,1.118 13.1000,2.499 L13.1000,13.499 C13.1000,14.880 12.881,15.999 11.500,15.999 ZM6.1000,3.996 C4.793,3.996 3.004,5.787 3.004,7.997 C3.004,10.205 4.793,11.997 6.1000,11.997 C9.206,11.997 10.995,10.205 10.995,7.997 C10.995,5.787 9.206,3.996 6.1000,3.996 ZM11.1000,1.999 L9.1000,1.999 L9.1000,3.999 L11.1000,3.999 L11.1000,1.999 ZM12.1000,8.999 C12.1000,8.999 12.1000,8.999 12.1000,8.999 L12.1000,8.999 L12.1000,6.999 L11.1000,6.999 L11.1000,7.276 C11.984,7.267 11.966,7.264 11.950,7.255 C11.965,7.420 11.997,7.580 11.997,7.749 C11.997,10.647 9.760,12.996 6.1000,12.996 C4.240,12.996 2.002,10.647 2.002,7.749 C2.002,7.580 2.035,7.420 2.049,7.255 C2.034,7.264 2.015,7.267 1.1000,7.276 L1.1000,6.999 L0.1000,6.999 L0.1000,8.999 L0.1000,8.999 C0.1000,8.999 0.1000,8.999 0.1000,8.999 L0.1000,12.999 C0.1000,14.103 1.895,14.999 2.1000,14.999 L10.1000,14.999 C12.104,14.999 12.1000,14.103 12.1000,12.999 L12.1000,8.999 Z"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="main-info"> <!-- нижняя часть с заголовком -->
+                <h2>Pastry with love</h2>
+                <svg 
+                width="201px" height="22px">               
+                <path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-dasharray="8, 16" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                d="M4.1000,3.1000 C30.434,3.1000 30.891,12.1000 52.1000,12.1000 C75.109,12.1000 82.213,3.1000 99.1000,3.1000 C117.787,3.1000 129.047,12.1000 146.1000,12.1000 C164.953,12.1000 171.229,3.1000 194.1000,3.1000 "/>
+                </svg>
+                <!-- текст -->
+                <p> 
+                    We’re bringing you fresh ingredients every <br/> day in ways you can’t resist.
+                </p>
+
+                <button class="menu-button">our menu</button> <!-- кнопочка -->
+
+                <div class="stamp-underlay"></div>  <!-- вырезанный хлеб вар.3 -->
+                <div class="stamp">
+                    <img src="./assets/images/Vektor-Smartobjekt1.png" alt="stamp wrap" /> 
+                    <div class="border"></div>
+                    <img src="./assets/images/Vektor-Smartobjekt.png" alt="stamp inner" /> 
+                </div>    
+            </div>   
+        </div> 
+    </header>
+    <main>
+        <div class="flex-tc">
+            <div class="info"> <!-- блок 1 --> 
+                <div class="general-info">  <!-- текстовый блок --> 
+                    <h3 class="general-heading">Art of cakes</h3>
+                    <h4 class="general-subheading">we create delicious memories</h4>
+                    <p class="general-par">
+                        Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.
+                    </p>
+                </div>
+             
+                <div class="chef-info">
+                    <h4>
+                        Chef Cook
+                    </h4>
+                    <div class="chef-info-name">
+                        <p class="w-b">Benito</p>
+                        <img src="./assets/images/img-avatar.png" alt="chef avatar"/>
+                        <p class="w-b">Gaspare</p>
+                    </div>
+                </div>
+                <div class="quote">
+                    <span style="padding-top: 28px;">&ldquo;</span> 
+                    <p>Unique creations for unique <br/> occasions.</p>
+                    <span>&ldquo;</span>
+                </div>
+            </div>
+            <div class="gallery"> <!-- блок картинки--> 
+                <div class="card-stamp">
+                    <img src="./assets/images/stamp2.png" alt="stamp wrap"/>
+                    <p>tastes so good!</p>
+                </div>
+
+                <div class="img-card">
+                    <img src="./assets/images/img.png" alt="dish photo">
+                    <span></span>
+                </div>
+                <div class="img-card">
+                    <img src="./assets/images/bg.png" alt="dish photo">
+                    <span></span>
+                </div>
+                <div class="img-card">
+                    <img src="./assets/images/bg1.png" alt="dish photo">
+                    <span></span>
+                </div>
+                <div class="img-card">
+                    <img src="./assets/images/bg2.png" alt="dish photo">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="tasty-pancakes">
+            <section class="dish-description">
+                <img class="rating_side" src="./assets/images/rating_side.png" alt="rating">
+                <div class="fold"></div>
+                
+                <div class="info-wrap">
+                    <div class="menu-circle">
+                        <img src="./assets/images/menu.png" alt="menu icon" />
+                    </div>
+                    <img class="mindwill" src="./assets/images/windmill.png" alt="windmill" />
+                    <div class="info">
+                        <h3 class="general-heading">Tasty pancakes</h3> 
+                        <h4 class="general-subheading">season favourite</h4>
+                        <p class="general-par">
+                            Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.
+                        </p>
+                    </div>
+                    <img class="rating" src="./assets/images/rating.png" alt="rating" />
+                    <div class="dishes-wrap">
+                        <div class="dishes">
+                            <img class="arrow" src="./assets/images/al.png" alt="arrow left" />
+                            <div class="ellipses">
+                                <div class="ellipse" style="background-image: url(./assets/images/dish1.png)"></div>
+                                <div class="ellipse" style="background-image: url(./assets/images/image2.png)"></div>
+                                <div class="ellipse" style="background-image: url(./assets/images/dish3.png)"></div>
+                            </div>
+                            <img class="arrow" src="./assets/images/ar.png" alt="arrow right" />
+                        </div>
+                        <img src="./assets/images/bullets.png" alt="bullets">
+                    </div>               
+                    <div class="ready">
+                        <h5 class="general-subheading">ready in</h5>
+                        <span>40</span>
+                        <h6>mins</h6>
+                    </div>
+                </div>
+            </section>
+        </div>
+       <div class="breakfast">
+            <div class="info">
+                <h3 class="general-heading">Breakfast</h3>
+                <h4 class="general-subheading">7am Breakfast? we’re open!</h4>
+                <div class="prices">
+                    <div class="price">
+                        <h4 class="general-heading">Full breakfast</h4>
+                        <p class="general-par">Duis ut tortor, et risus, vulputate pretium</p>
+                        <span class="price-count">$12.49</span>
+                    </div>
+                    <div class="price">
+                        <h4 class="general-heading">Toast & Jam</h4>
+                        <p class="general-par">Suspendisse, tempus, nterdum</p>
+                        <span class="price-count">$4.90</span>
+                    </div>
+                    <div class="price">
+                        <h4 class="general-heading">Muffins</h4>
+                        <p class="general-par">Fusce eget dui sodales est</p>
+                        <span class="price-count">$3.95</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery1">
+                <img class="ebene" src="./assets/images/Ebene.png" alt="menu thing" />
+                <div class="fold"></div>
+                <div class="bg-1" style="background-image: url(./assets/images/menu-right.png);">
+                   
+                    <div class="border-dashed">
+                        <div class="decorations">
+                            <div class="dec-text">
+                                <span>EST.</span>
+                                <span>1893</span>
+                            </div>
+                            <div class="union">
+                                <svg width="368" height="61" viewBox="0 0 368 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M356.5 29.1C356.5 33.037 358.962 35.5 361.1 35.5C365.037 35.5 367.5 33.037 367.5 29.1C367.5 26.962 365.037 24.5 361.1 24.5C358.962 24.5 356.5 26.962 356.5 29.1ZM356.5 29.1V29.5H213.475C212.946 13.395 199.733 0.5 183.5 0.5C167.267 0.5 154.054 13.395 153.525 29.5H11.5V29.1M356.5 29.1V30.5H213.5C213.5 47.068 200.069 60.5 183.5 60.5C166.931 60.5 153.5 47.068 153.5 30.5H11.5V29.1M11.5 29.1C11.5 26.962 9.038 24.5 5.1 24.5C2.962 24.5 0.5 26.962 0.5 29.1C0.5 33.037 2.962 35.5 5.1 35.5C9.038 35.5 11.5 33.037 11.5 29.1Z" stroke="#C2BEBA"/>
+                                </svg>
+                                <img src="./assets/images/food.png" alt="bakery" class="food">
+                            </div>
+                           
+                           
+                        </div>
+                        <div class="infoinfo">
+                            <h3 class="general-heading">Your morning <br/> Escape with Flair</h3>
+                            <p class="general-par">Donec vitae sapien ut libero venenatis faucibus. 
+                                Nullam quis ante. Etiam sit amet orci eget eros
+                                 faucibus tincidunt. Duis leo.</p>
+                            <button class="general-subheading">READ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-2">
+                    <span class="border-dashed"></span>
+                </div>
+                <div class="bg-3">
+                    <span class="border-dashed"></span>
+                </div>
+
+               
+            </div>
+       </div>
+       <div class="sandwich">
+            <div class="heading-wrap">
+                <div class="headings">
+                    <h3 class="general-heading">The Jibarito sandwich</h3>
+                    <h4 class="general-subheading">the best sandwich you’ve ever tasted!</h4>
+                </div>
+                <img src="./assets/images/windmill.png" alt="windmill" />
+            </div>
+            <div class="info">
+                <div class="left-block">
+                    <div class="ingridient">
+                        <img src="./assets/images/ing1.png" alt="ingridient">
+                        <h5 class="mini-heading">Class aptent</h5>
+                        <p class="general-par">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</p>
+                    </div>
+                    <div class="ingridient">
+                        <img src="./assets/images/ing2.png" alt="ingridient">
+                        <h5 class="mini-heading">Nulla eget</h5>
+                        <p class="general-par">Nullam dictum felis eu pede mollis pretium Integer tincidunt.</p>
+                    </div>
+                    <div class="ingridient">
+                        <img src="./assets/images/ing3.png" alt="ingridient">
+                        <h5 class="mini-heading">Sed nibh purus</h5>
+                        <p class="general-par">Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</p>
+                    </div>
+                </div>
+                <div class="right-block">
+                    <button class="menu-button">FULL RECIPE</button>
+
+                    <div class="right-part">
+                        <div class="ready">
+                            <h5 class="general-subheading">prep</h5>
+                            <span>15</span>
+                            <h6>mins</h6>
+                        </div>
+                        <div class="ready">
+                            <h5 class="general-subheading">cook</h5>
+                            <span>35</span>
+                            <h6>mins</h6>
+                        </div>
+                        <div class="ready">
+                            <h5 class="general-subheading">ready in</h5>
+                            <span>50</span>
+                            <h6>mins</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </main>
+    <footer>
+        <ul class="menu">
+            <li>our menu</li> <li>~</li>
+            <li>gallery</li> <li>~</li>
+            <li>culture</li> 
+        </ul>
+        <h1>gustoso</h1>
+        <ul class="menu">
+            <li>events</li> <li>~</li>
+            <li>catering</li> <li>~</li>
+            <li>visit us</li> 
+        </ul>
+    </footer>
+</body>
+</html>
+

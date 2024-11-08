@@ -1,0 +1,1484 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+html, body {
+    width: 100%; 
+    height: 100%;
+}
+
+
+/*================= FONT FACES =================*/
+
+@font-face {
+    font-family: "Scriptina";
+    src: url("./fonts/scriptina/SCRIPTIN.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("./fonts/Proxima\ Nova/proximanova_regular.ttf") format("truetype");
+}
+
+
+/*================= HEADER =================*/
+
+header {
+    width: 100%;
+    background-image: url(./assets/images/Header.webp);
+    height: 900px;
+    color: #fff;   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-inner {
+    padding: 0px 170px;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(circle at center, rgba(86,79,76,0.76) 0%, rgba(86,83,76,0) 100%, rgba(86,83,76,0) 100%);
+    position: relative;
+}
+
+.header-menu-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; 
+    width: 100%;
+    height: 70px;
+    padding: 0px 170px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(86, 83, 76, 0.529);
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Alegreya", serif;
+    font-size: 14px;
+    color: #fff;
+    height: 100%;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 30px;
+}
+
+.header-menu li {
+    letter-spacing: 6px;
+}
+
+header h1 {
+    padding: 7px 0 0 0;
+    font-family: "Scriptina", sans-serif;
+    font-size: 40px;
+    line-height: 32px;
+}
+
+.header-menu-wrap .contact-logos {
+    align-items: center;
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+}
+
+.stamp-underlay {
+    width: 100%;
+    background-color: #fff;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.stamp {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    bottom: -52px;
+}
+  
+
+.stamp img:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.border {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 9px 0px rgba(255, 255, 255, 0.87);
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+}
+
+.menu-button {
+    border-width: 1px;
+    border-color: rgb(158, 156, 147);
+    border-style: dashed;
+    background-color: rgba(86, 83, 76, 0.529);
+    width: 198px;
+    height: 48px;
+    z-index: 252;
+    text-transform: uppercase;
+    margin-top: 69px;
+    font-family: "Alegreya", serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+.main-info {
+    padding-top: 283px; /* почему при margin все слетает? */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-info svg {
+    margin-top: 56px;
+}
+
+.main-info p {
+    margin-top: 71px;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "Proxima Nova", serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.main-info h2 {
+    letter-spacing: 7px;
+    font-family: "Playfair Display", serif;
+    font-size: 92px;
+    font-weight: bold;
+}
+
+.dashed_line {
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style: dashed;
+    box-shadow: 0px 1px 0px 0px rgba(61, 48, 41, 0.004);
+    position: absolute;
+    left: 705px;
+    top: 431px;
+    width: 186px;
+    height: 7px;
+    z-index: 248;
+}
+
+/*================= MAIN-GENERAL =================*/
+
+main {
+    width: 100%;
+    /* background-color: #f00; */
+}
+
+.general-heading, 
+.general-subheading {
+    font-family: "Alegreya", serif;
+    font-weight: bold;
+}
+
+.general-heading {
+    color: #56534c;
+    letter-spacing: 1px;
+    font-size: 48px;
+    line-height: 30px;
+}
+
+.general-subheading {
+    font-size: 14px;
+    color: #a47d5e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height:30px;
+    margin-top: 10px;
+}
+
+.general-par {
+    font-family: "Proxima Nova", serif;
+    color: #56534c;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+
+/*================= MAIN-ART OF CAKES =================*/
+.flex-tc { 
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 180px 0px 230px;
+    background-image: url(./assets/images/texture.png);
+    gap: 71px;
+    background-size: cover;
+}
+
+
+.flex-tc .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 94px;
+}
+
+.general-info .general-heading, 
+.general-info .general-subheading,
+.chef-info h4 { 
+    text-align: center;
+}
+
+.general-info .general-par {
+    margin-top: 71px;
+    text-align: center;
+}
+
+.chef-info h4 {
+    margin-top: 40px;
+    font-size: 24px;
+    font-family: "Alegreya", serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #56534c;
+}
+
+.chef-info-name {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.chef-info .w-b {
+    border-top: 1px solid rgb(215, 213, 202);
+    border-bottom: 1px solid rgb(215, 213, 202);
+    padding: 20px 24px;
+    font-family: "Alegreya", serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #56534c;
+}
+
+.chef-info img {
+    border: 5px solid #fff;
+    border-radius: 1500px;
+}
+
+.quote {
+    display: flex;
+    gap: 62px;
+    margin-top: 25px;
+}
+
+.quote span {
+    font-family: "Times New Roman", serif;
+    font-size: 60px;
+    color: #56534c;
+    opacity: 0.502;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.quote p {
+    padding: 28px 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #a47d5e;
+    font-weight: 400;
+    font-family: "Scriptina", serif;
+    text-align: center;
+}
+
+.quote span:last-child {
+    transform: scale(-1, 1);
+    padding-top: 80px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 53%;
+    gap: 20px 20px;
+    margin-top: 110px;
+    position: relative;
+    margin-bottom: 118px;
+}
+
+
+.img-card {
+    width: 48%;
+    height: 48%;
+    position: relative;
+    filter: drop-shadow(0px 10px 5px #00000020);
+}
+
+.img-card img {
+    width: 100%;
+}
+
+.img-card span {
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 5px solid #fff;
+}
+
+.gallery .card-stamp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+}
+
+.card-stamp img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-stamp p {
+    position: absolute;
+    font-size: 30px;
+    font-family: "Alegreya", serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    color: #c9b176;
+    letter-spacing: 0.05em;
+}
+
+
+/*================= MAIN-TASTY PANCAKES =================*/
+
+.tasty-pancakes {
+    background-image: url(./assets/images/placeholder.webp);
+    width: 100%;
+    padding: 140px 370px 108px 265px;
+    background-size: cover;
+}
+
+.dish-description {
+    width: 100%;
+    height: 512px;
+    position: relative;
+    background-image: url(./assets/images/dish-left.png);
+}
+
+
+.tasty-pancakes .general-heading,
+.tasty-pancakes .general-par,
+.tasty-pancakes .info .general-subheading {
+    text-align: left;
+}
+
+.tasty-pancakes .general-par {
+    margin-top: 71px;
+    line-height: 24px;
+}
+
+.tasty-pancakes .menu-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating {
+    margin-top: 52px;
+}
+
+.dishes-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.dishes .arrow {
+    width: 32px;
+    height: 32px;
+}
+
+.dishes-wrap img {
+    width: 70px;
+    height: 10px;
+}
+
+.dishes {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.fold {
+    background-image: -moz-linear-gradient( 45deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 45deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 45deg, rgb(215,215,215) 0%, rgb(255,255,255) 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent #fff transparent transparent;
+    transform: rotate(0deg);
+    z-index: 147;
+  }
+  
+
+.dishes .ellipses {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.ellipse {
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+}
+
+
+.info-wrap {
+    top: 0;
+    left: 420px;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    height: 100%;
+    padding: 59px 63px 0px 63px;
+}
+
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.mindwill {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    z-index: 1;
+    width: 261px;
+    height: 294px;
+}
+
+
+.ready {
+    background-image: url(./assets/images/ready.png);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -105px;
+    bottom: 355px;
+    box-shadow: 0px 25px 54px 0px rgba(105, 80, 58, 0.45);
+    padding: 34px 51px;
+    text-align: center;
+}
+
+
+.tasty-pancakes .ready .general-heading {
+    font-size: 18px;
+    text-align: center;
+}
+
+.ready .general-subheading {
+    margin-top: 0;
+}
+
+.ready span, .ready h6 {
+    font-family: "Alegreya", serif;
+}
+
+.ready span {
+    font-size: 92px;
+    color: #dfc691;
+    line-height: 65px;
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+.ready h6 {
+    margin-top: 19px;
+    font-size: 18px;
+    color: #979285;
+}
+
+.rating_side {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 21px;
+    height: 140px;
+}
+
+
+/*================= MAIN-BREAKFAST =================*/
+
+.breakfast {
+    background-image: url(./assets/images/bg-break.png);
+    width: 100%;
+    display: flex;
+    padding: 90px 0 68px 0;
+    background-size: cover;
+}
+
+.breakfast .general-heading {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.breakfast .prices .general-heading {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.breakfast .info .general-subheading {
+    text-align: center;
+    font-size: 18px;
+    color: #c8a593;
+    margin-top: 6px;
+}
+
+.breakfast .info .general-par {
+    font-size: 16px;
+    color: #c2beba;
+    letter-spacing: 0.7px;
+}
+
+.breakfast .prices {
+    margin-top: 57px;
+    display: flex;
+    flex-direction: column;
+    gap: 51px;
+    
+}
+
+.breakfast .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.breakfast .price-count {
+    font-size: 36px;
+    color: #dfc691;
+    font-family: "Alegreya", serif;
+}
+
+.breakfast .info {
+    padding-left: 23.5vw;
+    padding-right: 19.1vw;
+}
+
+.breakfast .gallery1 {
+    position: relative;
+    width: 440px;
+    height: 600px;
+}
+
+
+.breakfast .gallery1 .border-dashed {
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px dashed rgb(158, 156, 147);
+}
+
+.breakfast .bg-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.breakfast .bg-1 {
+    top: 0;
+    left: 0;
+    z-index: 15;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.49);
+}
+
+
+.breakfast .bg-2 {
+    position: absolute;
+    top: 26px;
+    left: 51px;
+    z-index: 14;
+    width: 92%;
+    height: 92%;
+    background-color: rgb(229, 227, 217);
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.49);
+}
+  
+
+.breakfast .bg-3 {
+    background-color: rgb(213, 211, 203);
+    position: absolute;
+    top: 50px;
+    left: 98px;
+    z-index: 13;
+    width: 367px;
+    height: 500px;
+}
+
+.gallery1 .decorations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 42px;
+}
+
+.gallery1 .decorations .dec-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-family: "Alegreya", serif;
+    color: #56534c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.gallery1 .union {
+    position: relative;
+}
+
+.gallery1 .food {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery1 .infoinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.gallery1 .infoinfo .general-heading { 
+    text-align: center;
+    font-size: 44px;
+    color: #56534c;
+}
+
+.gallery1 .infoinfo .general-par { 
+    text-align: center;
+    margin-top: 44px;
+    padding: 0px 33px;
+    letter-spacing: 0.6px;
+}
+
+
+.gallery1 .infoinfo .general-subheading { 
+    font-size: 18px;
+    margin-top: 55px;
+}
+
+.gallery1 .infoinfo button {
+    padding: 12px 70px;
+    border: 1px solid rgb(158, 156, 147);
+}
+
+.gallery1 .fold {
+    border-width: 0 30px 30px 0;
+    background-image: -moz-linear-gradient( 45deg, rgb(86,83,76) 0%, rgb(171,169,166) 22%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 45deg, rgb(86,83,76) 0%, rgb(171,169,166) 22%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 45deg, rgb(86,83,76) 0%, rgb(171,169,166) 22%, rgb(255,255,255) 100%);
+}
+
+.ebene {
+    position: absolute;
+    left: 3px;
+    bottom: 5px;
+    z-index:155;
+}
+
+
+
+
+/*================= MAIN-SANDWICH =================*/
+
+.sandwich {
+    height: 920px;
+    width: 100%;
+    padding: 100px 170px 20px 170px;
+    background-color: rgb(243, 241, 233);
+}
+
+.sandwich .general-heading, .sandwich  .general-subheading {
+    text-align: center;
+}
+
+.sandwich .heading-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.sandwich .heading-wrap .headings {
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sandwich .heading-wrap img {
+    position: absolute;
+    bottom: -47px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 108px;
+    height: 123px;
+    z-index: 10;
+}
+
+.sandwich .info {
+    display: flex;
+    gap: 128px;
+}
+
+.sandwich .info .left-block {
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+    align-items: center;
+    padding-top: 64px;
+    width: 23%;
+}
+
+.sandwich .ingridient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+
+.sandwich .ingridient img {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0px 10px 5px #00000020);
+}
+
+.mini-heading {
+    font-family: "Alegreya", serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #a47d5e;
+}
+
+.right-block {
+    background-image: url(./assets/images/img_bg.png);
+    width: 840px;
+    height: 556px;
+    margin-top: 155px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 10px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.right-block .menu-button {
+    border-color: rgb(223, 198, 145);
+    background-color: rgb(255, 255, 255);
+    width: 171px;
+    height: 60px;
+    margin: 0;
+    font-size: 18px;
+    position: absolute;
+    bottom: -18px;
+    left: -22px;
+    color: #dfc691;
+}
+
+
+
+.right-part {
+    position: absolute;
+    right: 0;
+    top: -23px;
+}
+
+.right-part .ready {
+    position: static;
+    box-shadow: none;
+    
+}
+
+.right-part .ready:nth-child(2), .right-part .ready:nth-child(1) {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+.right-part .ready:nth-child(2) span, .right-part .ready:nth-child(1) span {
+    font-size: 60px;
+    color: #56534c;
+}
+
+.left-block .general-par {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+
+
+
+/*================= FOOTER =================*/
+
+footer {
+    padding: 100px 170px 70px 170px;
+    background-color: #f3f1e9;
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h1 {
+    font-family: "Scriptina", sans-serif;
+    font-size: 30px;
+    color: #56534c;
+}
+
+footer .menu {
+    padding: 30px 40px;
+    border-top: 1px solid #c2beba;
+    border-bottom: 1px solid #c2beba;
+    filter: drop-shadow(0px 35px 21.5px rgba(0,0,0,0.38));
+    display: flex;
+    justify-content: space-between;
+    font-family: "Alegreya", serif;
+    font-size: 14px;
+    color: #56534c;
+    height: 100%;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 38px;
+    letter-spacing: 4px;
+    line-height: 24px;
+}
+
+
+
+/*================= MEDIA QUERIES =================*/
+
+@media screen and (min-width: 2560px) {
+    .flex-tc {
+        padding: 0 380px;
+    }
+
+    .gallery {
+        width: 33%;
+    }
+
+    .tasty-pancakes {
+        padding: 140px 662px 108px 662px;
+    }
+}
+
+
+
+@media screen and (min-width: 1600px) {
+    .header-inner, 
+    .header-menu-wrap {
+        padding: 0px 300px;
+    }   
+
+    .sandwich .info {
+        justify-content: center;
+    }
+
+    .dishes-wrap {
+        margin-top: 35px;
+    }
+
+    .breakfast {
+        padding: 90px 300px 68px 300px;
+        justify-content: space-around;
+    }
+
+    .breakfast .info {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1599px) {
+    .gallery {
+        gap: 10px 10px;
+        margin-bottom: 228px;
+    }
+    .flex-tc .info {
+        width: 44%;
+    }
+
+    .tasty-pancakes .ready {
+        display: none;
+    }
+
+
+    .bg {
+        display: none;
+    }
+
+    .info-wrap {
+        position: static;
+    }
+
+    .rating_side {
+        display: none;
+    }
+
+    .tasty-pancakes {
+        padding: 140px 265px 108px 265px;
+    }
+
+    .tasty-pancakes .menu-circle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .header-inner, 
+    .header-menu-wrap {
+        padding: 0px 80px;
+    }   
+
+    .main-info h2 {
+        font-size: 72px;
+    }
+
+    .flex-tc .gallery {
+        display: none;
+    }
+
+    .flex-tc .info {
+        width: 100%;
+    }
+
+    .tasty-pancakes .ready {
+        display: none;
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .info-wrap {
+        position: static;
+    }
+
+    .rating_side {
+        display: none;
+    }
+
+    .tasty-pancakes {
+        padding: 140px 265px 108px 265px;
+    }
+
+    .tasty-pancakes .menu-circle {
+        display: none;
+    }
+    
+    .breakfast .info {
+        padding-left: 17.5%;
+        padding-right: 12%;
+    }
+
+    .sandwich {
+        padding: 100px 60px 20px 60px;
+    }
+
+    footer {
+        padding: 100px 60px 70px 60px;
+    }
+
+    footer .menu {
+        padding: 30px 0;
+        gap: 33px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .header-inner, 
+    .header-menu-wrap {
+        padding: 0px 60px;
+    }   
+
+    .flex-tc {
+        padding: 0 60px;
+    }
+
+    .ellipse {
+        width: 70px;
+        height: 70px;
+    }
+
+    .breakfast {
+        justify-content: center;
+    }
+
+    .breakfast .gallery1 {
+        display: none;
+    }
+
+    .breakfast .info {
+        padding: 0;
+    }
+
+    .sandwich {
+        padding: 90px 60px 20px 60px;
+    }
+
+    .sandwich .info .left-block {
+        flex-direction: row;
+        width: unset;
+        padding-top: 134px;
+    }
+
+    .sandwich .info {
+        gap: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-block {
+        margin-top: 55px;
+        height: 386px;
+    }
+
+    .right-block .menu-button {
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+
+    .right-part {
+        display: flex;
+        transform: translateX(-50%);
+        left: 50%;
+        right: unset;
+    }
+
+    .ready {
+        width: 150px;
+        height: 150px;
+        padding: 10px 10px;
+    }
+
+    .ready .general-subheading, 
+    .ready span,
+    .ready h6 {
+        margin: 0;
+    }
+
+    .ready span {
+        line-height: 70px;
+    }
+
+    .sandwich .general-heading {
+        line-height: 37px;
+    }
+
+    footer {
+        gap: 20px;
+        padding: 100px 30px 70px 30px;
+    }
+
+    footer .menu {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .header-menu {
+        display: none;
+    }
+
+    .main-info {
+        padding-top: 200px; 
+    }
+
+    header {
+        height: 70%;
+    }
+
+    .tasty-pancakes {
+        padding: 140px 145px 108px 145px;
+    }
+
+    .right-block {
+        width: 100%;
+        background-size: cover;
+    }
+
+    .mini-heading {
+        font-size: 28px;
+    }
+
+    footer {
+       flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .flex-tc {
+        padding: 0 50px;
+    }
+
+    .chef-info-name {
+        gap: 14px;
+        
+    }
+
+    header {
+        height: 100%;
+    }
+
+
+    .header-inner {
+        align-items: center;
+        display: flex;
+    }
+
+    .chef-info-name .w-b {
+        padding: 20px 18px;
+    }
+
+    .main-info {
+        padding-top: 0;
+    }
+
+    .main-info h2 {
+        font-size: 58px;
+        text-align: center;
+    }
+
+    .main-info svg {
+        display: none;
+    }
+
+    .main-info p {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .main-info p br {
+        display: none;
+    }
+
+    .general-info .general-par {
+        margin-top: 40px;
+    }
+
+    .tasty-pancakes {
+        padding: 25px;
+    }
+
+    .info-wrap {
+        padding: 45px 43px 0px 43px;
+    }
+
+    .dishes .ellipses {
+        gap: 17px;
+    }
+
+    .tasty-pancakes .general-par {
+        margin-top: 40px;
+    }
+
+    .tasty-pancakes .general-heading {
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .tasty-pancakes .info .general-subheading {
+        text-align: center;
+    }
+
+    .dishes-wrap {
+        bottom: 10px;
+    }
+
+    .sandwich {
+        height: unset;
+        padding: 80px 30px 20px 30px;
+    }
+
+    .sandwich .info .left-block {
+        flex-direction: column;
+        gap: 37px;
+        
+    }
+
+    .right-block {
+        height: 266px;
+    }
+
+    .ready {
+        width: 110px;
+        height: 110px;
+    }
+
+    .sandwich .heading-wrap .headings {
+        width: 100%;
+    }
+
+    .ready span {
+        font-size: 52px;
+    }
+
+    .right-part .ready:nth-child(2) span, .right-part .ready:nth-child(1) span {
+        font-size: 40px;
+    }
+
+    .ready span {
+        line-height: 36px;
+    }
+
+    footer {
+        padding: 30px 30px 20px 30px;
+        justify-content: center;
+    }
+
+    footer .menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-inner, 
+    .header-menu-wrap {
+        padding: 0px 35px;
+    }   
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .main-info h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .main-info {
+        padding-top: 160px; 
+    }
+
+    .main-info p {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .stamp {
+        display: none;
+    }
+
+
+    .flex-tc { 
+        padding: 0px 35px;
+    }
+
+    .flex-tc .info {
+        padding: 25px 0;
+        margin: 0;
+    }
+
+    .chef-info h4 {
+        margin-top: 35px;
+    }
+
+    .chef-info img {
+        order: -1;
+    }
+
+    .chef-info .w-b {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .quote {
+        display: none;
+    }
+
+    .chef-info-name {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 5px;
+    } 
+
+    .chef-info-name .w-b {
+        border-bottom: none;
+        border-top: none;
+    }
+
+    .general-info .general-par {
+        text-align: justify;
+    }
+
+    .rating {
+        display: none;
+    }
+
+    .dishes .ellipses .ellipse:last-child {
+        display: none;
+    }
+
+    .ready {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sandwich .info .left-block {
+        padding-top: 174px;
+    }
+}
